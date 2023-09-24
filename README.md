@@ -9,6 +9,7 @@
 4. Install Scrapy using pip: `pip install scrapy`
 5. Listing the scrapy projects `scrapy list` 
 6. Running the scrapy project: `scrapy crawl quotes` 
+7. pip install scrapeops-scrapy-proxy-sdk
 
 
 

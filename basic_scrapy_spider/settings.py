@@ -11,6 +11,13 @@ BOT_NAME = 'basic_scrapy_spider'
 
 SPIDER_MODULES = ['basic_scrapy_spider.spiders']
 NEWSPIDER_MODULE = 'basic_scrapy_spider.spiders'
+from secret_stuff import SOK
+SCRAPEOPS_API_KEY = SOK
+SCRAPEOPS_PROXY_ENABLED = True
+
+DOWNLOADER_MIDDLEWARES = {
+    'scrapeops_scrapy_proxy_sdk.scrapeops_scrapy_proxy_sdk.ScrapeOpsScrapyProxySdk': 725,
+}
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
